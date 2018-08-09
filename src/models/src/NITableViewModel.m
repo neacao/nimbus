@@ -355,10 +355,11 @@
   return nil;
 }
 
-- (void)setSectionIndexType:(NITableViewModelSectionIndex)sectionIndexType showsSearch:(BOOL)showsSearch showsSummary:(BOOL)showsSummary {
+- (void)setSectionIndexType:(NITableViewModelSectionIndex)sectionIndexType showsSearch:(BOOL)showsSearch showsSummary:(BOOL)showsSummary force:(BOOL)force{
   if (_sectionIndexType != sectionIndexType
       || _sectionIndexShowsSearch != showsSearch
-      || _sectionIndexShowsSummary != showsSummary) {
+      || _sectionIndexShowsSummary != showsSummary
+      || force == TRUE) {
     _sectionIndexType = sectionIndexType;
     _sectionIndexShowsSearch = showsSearch;
     _sectionIndexShowsSummary = showsSummary;

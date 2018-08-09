@@ -67,7 +67,7 @@ typedef enum {
 #pragma mark Configuration
 
 // Immediately compiles the section index.
-- (void)setSectionIndexType:(NITableViewModelSectionIndex)sectionIndexType showsSearch:(BOOL)showsSearch showsSummary:(BOOL)showsSummary;
+- (void)setSectionIndexType:(NITableViewModelSectionIndex)sectionIndexType showsSearch:(BOOL)showsSearch showsSummary:(BOOL)showsSummary force:(BOOL)force;
 
 @property (nonatomic, readonly, assign) NITableViewModelSectionIndex sectionIndexType; // Default: NITableViewModelSectionIndexNone
 @property (nonatomic, readonly, assign) BOOL sectionIndexShowsSearch; // Default: NO
